@@ -5,18 +5,18 @@
 and websocket API. Insight API runs in NodeJS and uses LevelDB for storage.
 
 This is a backend-only service. If you're looking for the web frontend application,
-take a look at https://github.com/bitpay/insight.
+take a look at https://github.com/MonetaryUnit/insight.
 
 *Insight API* allows to develop bitcoin-related applications (such as wallets) that
 require certain information from the blockchain that bitcoind does not provide.
 
 A blockchain explorer front-end has been developed on top of *Insight API*. It can
-be downloaded at [Github Insight Repository](https://github.com/bitpay/insight).
+be downloaded at [Github Insight Repository](https://github.com/MonetaryUnit/insight).
 
 ## Warning
   Insight file sync does not work with **bitcoind**  v0.10 
   In order to use Insigtht you must set the environment variable INSIGHT_FORCE_RPC_SYNC = 1  
-  We are working on `bitcore-node` to replace Insight-api. Check `bitcore-node` on  [github](https://github.com/bitpay/bitcore-node).
+  We are working on `bitcore-node` to replace Insight-api. Check `bitcore-node` on  [github](https://github.com/MonetaryUnit/bitcore-node).
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ bitcoind must be running and must have finished downloading the blockchain **bef
 
   To install Insight API, clone the main repository:
 
-    $ git clone https://github.com/bitpay/insight-api && cd insight-api
+    $ git clone https://github.com/MonetaryUnit/insight-api && cd insight-api
 
   Install dependencies:
 
@@ -151,7 +151,7 @@ To run the tests
 ```$ grunt test```
 
 
-Contributions and suggestions are welcome at [insight-api github repository](https://github.com/bitpay/insight-api).
+Contributions and suggestions are welcome at [insight-api github repository](https://github.com/MonetaryUnit/insight-api).
 
 ## Caching schema
 
