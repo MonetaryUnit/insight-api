@@ -2330,7 +2330,7 @@ Message.verifyWithPubKey = function(pubkey, message, sig) {
 
 //TODO: Message.verify ... with address, not pubkey
 
-Message.magicBytes = new Buffer('Bitcoin Signed Message:\n');
+Message.magicBytes = new Buffer('Monetaryunit Signed Message:\n');
 
 Message.magicHash = function(str) {
   var magicBytes = Message.magicBytes;
