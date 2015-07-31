@@ -9,6 +9,6 @@ var auth = {
 //
 //
 module.exports = {
-  confirmEmailHost: 'https://insight.bitpay.com',
+  confirmEmailHost: 'https://api.monetaryunit.org',
   email: smtpTransport(auth),
 };

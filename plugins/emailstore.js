@@ -114,7 +114,7 @@
     emailPlugin.crypto = config.crypto || crypto;
 
     emailPlugin.confirmUrl = (
-      process.env.INSIGHT_EMAIL_CONFIRM_HOST || config.confirmUrl || 'https://insight.bitpay.com'
+      process.env.INSIGHT_EMAIL_CONFIRM_HOST || config.confirmUrl || 'https://api.monetaryunit.org'
     ) + globalConfig.apiPrefix + '/email/validate';
 
     emailPlugin.redirectUrl = (
@@ -497,7 +497,7 @@
         function(callback) {
           emailPlugin.exists(email, function(err, exists) {
             if (err) return callback(err);
-            
+
             if (exists) {
               emailPlugin.checkPassphrase(email, passphrase, function(err, match) {
                 if (err) return callback(err);
