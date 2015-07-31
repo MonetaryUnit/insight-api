@@ -45,7 +45,7 @@ var fullTx = function(tx) {
     valueOut += o.valueSat;
   });
 
-  t.valueOut = (valueOut.toFixed(8) / util.COIN);
+  t.valueOut = (valueOut.toFixed(5) / util.COIN);
   try {
     t.vout = tx.vout.map(function(o) {
       var r = {};
